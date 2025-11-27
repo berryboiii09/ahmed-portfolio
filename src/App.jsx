@@ -26,10 +26,27 @@ function App() {
                     element={
             <div>
                 <Section id="hero" title="" bgcolor="white" textcolor="#7c3aed">
-                    <div
-                        className="text-7xl md:text-9xl text-nowrap font-extrabold">Ahmed
-                        H.S.
+                    <div className="flex items-center justify-center gap-6 md:gap-12">
+
+                        {/* Left text */}
+                        <div className="text-5xl md:text-9xl pr-70 pb-40 font-extrabold text-purple-600 text-nowrap">
+                            Ahmed
+                        </div>
+
+                        {/* Center image */}
+                        <img
+                            src="/img/Me.png"
+                            alt="Me"
+                            className="absolute max-h-screen pt-15"
+                        />
+
+                        {/* Right text */}
+                        <div className="text-5xl md:text-8xl font-extrabold text-blue-600 text-nowrap">
+                            H.S.
+                        </div>
+
                     </div>
+
                 </Section>
 
                 <Section id="about" title="Who am i ?" bgcolor="#f8fafc" textcolor="#0f172a" maxWidth="1000px">

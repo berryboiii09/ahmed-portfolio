@@ -36,7 +36,8 @@ export default function ProjectDetails() {
                 </div>
                 <img src={project.imageUrl} alt={project.title} className="w-full mb-4 rounded-xl border border-slate-300"/>
                 <h1 className="text-4xl font-bold mb-4 pt-6">{project.title}</h1>
-                <p className="text-lg mb-6 pt-2 pb-6">{project.details}</p>
+                <p className="text-lg mb-6 pt-2">{project.details}</p>
+                <p className="text-lg mb-6 pt-2 pb-6">Tech Stack: {project.stack}</p>
                 {projectButtons()}
             </div>
         </div>

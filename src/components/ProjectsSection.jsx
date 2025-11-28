@@ -39,10 +39,10 @@ export default function ProjectsSection() {
         <section
             id="projects"
             ref={ref}
-            className="min-h-screen flex justify-center items-center px-6 py-40 bg-slate-50"
+            className="min-h-screen flex justify-center items-center px-6 py-40 bg-slate-50 dark:bg-slate-900 transition-colors duration-300"
         >
             <div className={`max-w-5xl w-full text-center animate-fade-up ${visible ? "show" : ""}`}>
-                <h2 className="text-4xl font-bold mb-10 pb-6 text-slate-900">My Latest Projects</h2>
+                <h2 className="text-4xl font-bold mb-10 pb-6 text-slate-900 dark:text-white transition-colors duration-300">My Latest Projects</h2>
 
                 <CategoryFilter category={category} setCategory={setCategory} />
 

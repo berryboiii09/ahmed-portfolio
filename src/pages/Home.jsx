@@ -26,7 +26,7 @@ export default function Home() {
         <div>
 
             {/* Hero */}
-            <Section id="hero" title="" bgcolor="white" textcolor="black">
+            <Section id="hero" title="" bgcolor="bg-white dark:bg-slate-950" textcolor="text-slate-900 dark:text-white">
                 <div className="flex max-md:flex-col justify-center items-center gap-6">
                     <img src="/img/Me2.png" alt="Me" className="rounded-full"/>
                     <div>
@@ -58,27 +58,27 @@ export default function Home() {
             <Section
                 id="about"
                 title="Who am i ?"
-                bgcolor="#f8fafc"
-                textcolor="#0f172a"
+                bgcolor="bg-slate-50 dark:bg-slate-900"
+                textcolor="text-slate-900 dark:text-white"
                 maxWidth="1000px"
             >
-                <div className="text-justify pt-6 text-slate-600">
+                <div className="text-justify pt-6 text-slate-600 dark:text-slate-400 text-lg">
                     My name is Ahmed Hany, I'm 24 years old and I live in Egypt.
                     I'm a Computer and Control Engineer with a strong foundation in software development and a passion
                     for creating engaging digital experiences. Skilled in Unity game development, designing interactive
-                    gameplay and optimizing performance. Proficient in frontend development using HTML, CSS, and
-                    JavaScript to build responsive, user-friendly interfaces.
+                    gameplay and optimizing performance. Proficient in frontend development using HTML, CSS,
+                    JavaScript, and React to build responsive, user-friendly interfaces.
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-10 md:gap-80">
+                <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-10">
                     <div>
                         <div className="text-4xl font-bold mb-6 flex justify-center items-center gap-5">
                             <GiGraduateCap/>Education
                         </div>
                         <div className="text-2xl font-semibold pt-6">Shorouk Academy</div>
-                        <div className="text-lg text-slate-600">Computer and Control Engineering</div>
-                        <div className="text-lg text-slate-600">Bachelor's Degree</div>
-                        <div className="text-lg text-slate-600">2020 - 2025</div>
+                        <div className="text-lg text-slate-600 dark:text-slate-400">Computer and Control Engineering</div>
+                        <div className="text-lg text-slate-600 dark:text-slate-400">Bachelor's Degree</div>
+                        <div className="text-lg text-slate-600 dark:text-slate-400">2020 - 2025</div>
                     </div>
 
                     <div>
@@ -86,15 +86,15 @@ export default function Home() {
                             <PiOfficeChair/> Experiences
                         </div>
                         <div className="text-2xl font-semibold pt-6">Elevvo Pathways</div>
-                        <div className="text-lg text-slate-600">Frontend Developer Intern</div>
-                        <div className="text-lg text-slate-600">October 2025 - November 2025</div>
+                        <div className="text-lg text-slate-600 dark:text-slate-400">Frontend Developer Intern</div>
+                        <div className="text-lg text-slate-600 dark:text-slate-400">October 2025 - November 2025</div>
                     </div>
                 </div>
             </Section>
 
 
             {/* Skills */}
-            <Section id="skills" title="My Skills" textcolor="#0f172a" maxWidth="1000px" bgcolor="white">
+            <Section id="skills" title="My Skills" textcolor="text-slate-900 dark:text-white" maxWidth="1000px" bgcolor="bg-white dark:bg-slate-950">
                 <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-x-50 gap-y-10">
 
                     {/* Frontend */}
@@ -135,7 +135,7 @@ export default function Home() {
                     {/* Other Skills */}
                     <div>
                         <div
-                            className="text-3xl font-bold mb-4 text-nowrap text-slate-700 pb-4 flex justify-center items-center gap-5">
+                            className="text-3xl font-bold mb-4 text-nowrap text-slate-700 dark:text-slate-400 pb-4 flex justify-center items-center gap-5">
                             <MdMiscellaneousServices/> Other Skills
                         </div>
                         <SkillCard icon={<FaGit/>} title="Git"/>
@@ -154,21 +154,21 @@ export default function Home() {
             <ProjectsSection/>
 
             {/* Contact */}
-            <Section id="contact" title="Contact Me" maxWidth="1000px" bgcolor="white" textcolor="#0f172a">
+            <Section id="contact" title="Contact Me" maxWidth="1000px" bgcolor="bg-white dark:bg-slate-950" textcolor="text-slate-900 dark:text-white">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10">
 
                     <div>
                         <div className="text-3xl font-bold">E-mail</div>
-                        <div className="text-lg pt-4 text-slate-600">ahmedhst2001@gmail.com</div>
+                        <div className="text-lg pt-4 text-slate-600 dark:text-slate-400">ahmedhst2001@gmail.com</div>
                     </div>
 
                     <div>
                         <div className="text-3xl font-bold">Social Media</div>
-                        <a className="text-lg pt-4 text-slate-600 flex justify-center items-center gap-5" href="https://www.linkedin.com/in/ahmedhanysaid2001/" target="_blank"><FaLinkedin/>LinkedIn</a>
-                        <a className="text-lg text-slate-600 flex justify-center items-center gap-5" href="https://github.com/berryboiii09" target="_blank"><FaGithub/>GitHub</a>
-                        <a className="text-lg text-slate-600 flex justify-center items-center gap-5" href="https://berryboiii.itch.io/" target="_blank"><FaItchIo/>Itch.io</a>
-                        <a className="text-lg text-slate-600 flex justify-center items-center gap-5" href="https://www.instagram.com/ahmedhny_/" target="_blank"><FaInstagram/>Instagram</a>
-                        <a className="text-lg text-slate-600 flex justify-center items-center gap-5" onClick={()=>alert("Discord: berryboiii")}><FaDiscord/>Discord</a>
+                        <a className="text-lg pt-4 text-slate-600 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-900 transition-colors duration-300 cursor-pointer flex justify-center items-center gap-5" href="https://www.linkedin.com/in/ahmedhanysaid2001/" target="_blank"><FaLinkedin/>LinkedIn</a>
+                        <a className="text-lg text-slate-600 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-900 transition-colors duration-300 cursor-pointer flex justify-center items-center gap-5" href="https://github.com/berryboiii09" target="_blank"><FaGithub/>GitHub</a>
+                        <a className="text-lg text-slate-600 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-900 transition-colors duration-300 cursor-pointer flex justify-center items-center gap-5" href="https://berryboiii.itch.io/" target="_blank"><FaItchIo/>Itch.io</a>
+                        <a className="text-lg text-slate-600 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-900 transition-colors duration-300 cursor-pointer flex justify-center items-center gap-5" href="https://www.instagram.com/ahmedhny_/" target="_blank"><FaInstagram/>Instagram</a>
+                        <a className="text-lg text-slate-600 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-900 transition-colors duration-300 cursor-pointer flex justify-center items-center gap-5" onClick={()=>alert("Discord: berryboiii")}><FaDiscord/>Discord</a>
                     </div>
 
                 </div>

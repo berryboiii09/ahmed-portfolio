@@ -8,7 +8,7 @@ export default function CategoryFilter({ category, setCategory }) {
                     className={`px-3 py-2 rounded-full transition-colors duration-300 cursor-pointer ${
                         category === cat
                             ? "bg-violet-600 text-white hover:bg-violet-900"
-                            : "bg-white text-black border hover:bg-gray-300 border-gray-300"
+                            : "bg-white text-black border hover:bg-gray-300 border-gray-300 dark:bg-slate-900 dark:text-white dark:border-slate-700 dark:hover:bg-slate-800"
                     }`}
                 >
                     {cat}

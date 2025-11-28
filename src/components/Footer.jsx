@@ -1,6 +1,6 @@
 export default function Footer() {
     return(
-        <div className="min-h-20 bg-slate-50 flex justify-center items-center">
+        <div className="min-h-20 bg-slate-50 flex justify-center items-center dark:bg-slate-900 dark:text-white">
             <a
                 href="https://github.com/berryboiii09"
                 className="underline hover:text-blue-500 transition-colors duration-300"

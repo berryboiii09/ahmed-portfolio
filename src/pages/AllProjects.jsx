@@ -24,7 +24,7 @@ export default function AllProjects() {
     const currentItems = filtered.slice(start, start + itemsPerPage);
 
     return (
-        <div className="min-h-screen flex justify-center items-center px-6 pt-40 pb-20">
+        <div className="min-h-screen flex justify-center items-center px-6 pt-40 pb-20 dark:bg-slate-950 transition-colors duration-300">
             <div className="max-w-6xl w-full text-center">
                 <div className="pb-4">
                     <Link
@@ -34,7 +34,7 @@ export default function AllProjects() {
                         ← Back to home
                     </Link>
                 </div>
-                <h2 className="text-4xl font-bold pb-6">My Projects</h2>
+                <h2 className="text-4xl font-bold pb-6 dark:text-white transition-colors duration-300">My Projects</h2>
 
                 <CategoryFilter category={category} setCategory={setCategory}/>
 
@@ -56,7 +56,7 @@ export default function AllProjects() {
                         Prev
                     </button>
 
-                    <span className="px-4 py-2">
+                    <span className="px-4 py-2 dark:text-white transition-colors duration-300">
             Page {page} of {totalPages}
           </span>
 

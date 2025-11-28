@@ -24,7 +24,8 @@ export default function AllProjects() {
     const currentItems = filtered.slice(start, start + itemsPerPage);
 
     return (
-        <div className="min-h-screen flex justify-center items-center px-6 pt-40 pb-20 dark:bg-slate-950 transition-colors duration-300">
+        <div
+            className="min-h-screen flex justify-center items-center px-6 pt-40 pb-20 dark:bg-slate-950 transition-colors duration-300">
             <div className="max-w-6xl w-full text-center">
                 <div className="pb-4">
                     <Link

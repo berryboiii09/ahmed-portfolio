@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import {useState} from "react";
+import {useNavigate, useLocation} from "react-router-dom";
+import {Menu, X} from "lucide-react";
 import DarkButton from "./DarkButton";
 
 export default function Header() {
@@ -13,14 +13,16 @@ export default function Header() {
         setOpen(false);
 
         if (location.pathname === "/") {
-            document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+            document.getElementById(id)?.scrollIntoView({behavior: "smooth"});
         } else {
             navigate("/");
         }
     };
 
     return (
+
         <div className="flex justify-center items-center">
+            {/* Header */}
             <div
                 className={`fixed top-5 max-md:min-w-11/12 min-w-4/5 rounded-4xl backdrop-blur-2xl dark:bg-slate-900/60 bg-white/40 border 
                 border-gray-200 dark:border-gray-800 shadow-xl/5 z-10 flex flex-col md:flex-row justify-between transition-all duration-300 overflow-hidden 
@@ -36,21 +38,29 @@ export default function Header() {
                         Ahmed H. S.
                     </div>
                     <div className="flex gap-8 text-black dark:text-white">
-                    <DarkButton/>
-                    <button
-                        className="md:hidden"
-                        onClick={() => setOpen(!open)}
-                    >
-                        {open ? <X size={28} /> : <Menu size={28} />}
-                    </button>
-
-                    <ul className="hidden md:flex gap-8">
-                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("about")}>About</li>
-                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("skills")}>Skills</li>
-                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("projects")}>Projects</li>
-                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("contact")}>Contact</li>
-                    </ul>
-                </div>
+                        <DarkButton/>
+                        <button
+                            className="md:hidden"
+                            onClick={() => setOpen(!open)}
+                        >
+                            {open ? <X size={28}/> : <Menu size={28}/>}
+                        </button>
+                        {/* Nav links */}
+                        <ul className="hidden md:flex gap-8">
+                            <li className="cursor-pointer hover:text-violet-500 transition-colors duration-300"
+                                onClick={() => handleNavigation("about")}>About
+                            </li>
+                            <li className="cursor-pointer hover:text-violet-500 transition-colors duration-300"
+                                onClick={() => handleNavigation("skills")}>Skills
+                            </li>
+                            <li className="cursor-pointer hover:text-violet-500 transition-colors duration-300"
+                                onClick={() => handleNavigation("projects")}>Projects
+                            </li>
+                            <li className="cursor-pointer hover:text-violet-500 transition-colors duration-300"
+                                onClick={() => handleNavigation("contact")}>Contact
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Mobile Dropdown*/}
@@ -61,10 +71,18 @@ export default function Header() {
                         ${open ? "mt-6 opacity-100 pl-10 pt-4" : "max-h-0 opacity-0"}
                     `}
                 >
-                    <li className="list-none cursor-pointer dark:text-white hover:text-blue-500" onClick={() => handleNavigation("about")}>About</li>
-                    <li className="list-none cursor-pointer dark:text-white hover:text-blue-500" onClick={() => handleNavigation("skills")}>Skills</li>
-                    <li className="list-none cursor-pointer dark:text-white hover:text-blue-500" onClick={() => handleNavigation("projects")}>Projects</li>
-                    <li className="list-none cursor-pointer dark:text-white hover:text-blue-500" onClick={() => handleNavigation("contact")}>Contact</li>
+                    <li className="list-none cursor-pointer dark:text-white hover:text-violet-500"
+                        onClick={() => handleNavigation("about")}>About
+                    </li>
+                    <li className="list-none cursor-pointer dark:text-white hover:text-violet-500"
+                        onClick={() => handleNavigation("skills")}>Skills
+                    </li>
+                    <li className="list-none cursor-pointer dark:text-white hover:text-violet-500"
+                        onClick={() => handleNavigation("projects")}>Projects
+                    </li>
+                    <li className="list-none cursor-pointer dark:text-white hover:text-violet-500"
+                        onClick={() => handleNavigation("contact")}>Contact
+                    </li>
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import CategoryFilter from "./CategoryFilter";
 import ProjectCards from "./ProjectCards.jsx";
 
 export default function ProjectsSection() {
+    /* Sort and filter */
     const [category, setCategory] = useState("All");
 
     const sorted = [...projects].sort(
@@ -18,6 +19,7 @@ export default function ProjectsSection() {
 
     const latestSix = filtered.slice(0, 3);
 
+    /* Scroll Animations */
     const ref = useRef(null);
     const [visible, setVisible] = useState(false);
 

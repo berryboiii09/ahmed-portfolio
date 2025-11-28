@@ -8,6 +8,7 @@ export default function Section({
                                     textcolor = "text-slate-900",
                                     maxWidth = "700px",
                                 }) {
+    /* Scroll Animations*/
     const ref = useRef(null);
     const [visible, setVisible] = useState(false);
 
@@ -36,6 +37,7 @@ export default function Section({
                 className={`w-full text-center animate-fade-up ${visible ? "show" : ""}`}
             >
                 <h2 className="text-4xl font-bold mb-6">{title}</h2>
+                {/* Section content */}
                 {children}
             </div>
         </section>

@@ -22,7 +22,7 @@ export default function Header() {
     return (
         <div className="flex justify-center items-center">
             <div
-                className={`fixed top-5 max-md:min-w-11/12 min-w-4/5 rounded-4xl backdrop-blur-2xl dark:bg-slate-900/60 bg-white/20 border 
+                className={`fixed top-5 max-md:min-w-11/12 min-w-4/5 rounded-4xl backdrop-blur-2xl dark:bg-slate-900/60 bg-white/40 border 
                 border-gray-200 dark:border-gray-800 shadow-xl/5 z-10 flex flex-col md:flex-row justify-between transition-all duration-300 overflow-hidden 
                 ${open ? "py-6" : "py-4"}`}>
 

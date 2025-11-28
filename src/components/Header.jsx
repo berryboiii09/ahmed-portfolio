@@ -21,7 +21,7 @@ export default function Header() {
     return (
         <div className="flex justify-center items-center">
             <div
-                className={`fixed top-5 max-md:min-w-11/12 min-w-4/5 rounded-3xl backdrop-blur-2xl bg-white/20 border 
+                className={`fixed top-5 max-md:min-w-11/12 min-w-4/5 rounded-4xl backdrop-blur-2xl bg-white/20 border 
                 border-gray-200 shadow-xl/5 z-10 flex flex-col md:flex-row justify-between transition-all duration-300 overflow-hidden 
                 ${open ? "py-6" : "py-4"}`}>
 
@@ -43,12 +43,14 @@ export default function Header() {
                     </button>
 
                     <ul className="hidden md:flex gap-8">
-                        <li className="cursor-pointer hover:text-blue-500" onClick={() => handleNavigation("about")}>About</li>
-                        <li className="cursor-pointer hover:text-blue-500" onClick={() => handleNavigation("skills")}>Skills</li>
-                        <li className="cursor-pointer hover:text-blue-500" onClick={() => handleNavigation("projects")}>Projects</li>
-                        <li className="cursor-pointer hover:text-blue-500" onClick={() => handleNavigation("contact")}>Contact</li>
+                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("about")}>About</li>
+                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("skills")}>Skills</li>
+                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("projects")}>Projects</li>
+                        <li className="cursor-pointer hover:text-blue-500 transition-colors duration-300" onClick={() => handleNavigation("contact")}>Contact</li>
                     </ul>
                 </div>
+
+                {/* Mobile Dropdown*/}
                 <div
                     className={`
                         md:hidden flex flex-col gap-4

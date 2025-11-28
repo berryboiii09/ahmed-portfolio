@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import {useEffect, useRef, useState} from "react";
 import { projects } from "../data/projects.js";
 import CategoryFilter from "./CategoryFilter";
 import ProjectCards from "./ProjectCards.jsx";
@@ -16,15 +16,33 @@ export default function ProjectsSection() {
             ? sorted
             : sorted.filter((p) => p.category === category);
 
-    const latestSix = filtered.slice(0, 6);
+    const latestSix = filtered.slice(0, 3);
+
+    const ref = useRef(null);
+    const [visible, setVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    setVisible(true);
+                }
+            },
+            { threshold: 0.25 }
+        );
+
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <section
             id="projects"
+            ref={ref}
             className="min-h-screen flex justify-center items-center px-6 py-40 bg-slate-50"
         >
-            <div className="max-w-5xl w-full text-center">
-                <h2 className="text-4xl font-bold mb-10 pb-6 text-slate-900">Latest Projects</h2>
+            <div className={`max-w-5xl w-full text-center animate-fade-up ${visible ? "show" : ""}`}>
+                <h2 className="text-4xl font-bold mb-10 pb-6 text-slate-900">My Latest Projects</h2>
 
                 <CategoryFilter category={category} setCategory={setCategory} />
 
@@ -37,7 +55,7 @@ export default function ProjectsSection() {
 
                 <Link
                     to="/projects"
-                    className="inline-block mt-10 px-6 py-3 rounded-full bg-violet-600 text-white hover:bg-fuchsia-600 border border-violet-900 hover:border-fuchsia-900 transition-colors duration-300"
+                    className="inline-block mt-10 px-6 py-3 rounded-full bg-violet-600 text-white hover:bg-violet-900 transition-colors duration-300"
                 >
                     View All Projects →
                 </Link>

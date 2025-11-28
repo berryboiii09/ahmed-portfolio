@@ -5,10 +5,10 @@ export default function CategoryFilter({ category, setCategory }) {
                 <button
                     key={cat}
                     onClick={() => setCategory(cat)}
-                    className={`px-4 py-2 rounded-full transition-colors duration-300 border cursor-pointer ${
+                    className={`px-3 py-2 rounded-full transition-colors duration-300 cursor-pointer ${
                         category === cat
-                            ? "bg-violet-600 text-white hover:bg-fuchsia-600 border-violet-900 hover:border-fuchsia-900"
-                            : "bg-white text-black hover:bg-gray-300 border-gray-300"
+                            ? "bg-violet-600 text-white hover:bg-violet-900"
+                            : "bg-white text-black border hover:bg-gray-300 border-gray-300"
                     }`}
                 >
                     {cat}

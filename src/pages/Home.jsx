@@ -177,8 +177,6 @@ export default function Home() {
                            href="https://berryboiii.itch.io/" target="_blank"><FaItchIo/>Itch.io</a>
                         <a className="text-lg text-slate-600 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-900 transition-colors duration-300 cursor-pointer flex justify-center items-center gap-5"
                            href="https://www.instagram.com/ahmedhny_/" target="_blank"><FaInstagram/>Instagram</a>
-                        <a className="text-lg text-slate-600 dark:text-slate-400 dark:hover:text-slate-200 hover:text-slate-900 transition-colors duration-300 cursor-pointer flex justify-center items-center gap-5"
-                           onClick={() => alert("Discord: berryboiii")}><FaDiscord/>Discord</a>
                     </div>
 
                 </div>

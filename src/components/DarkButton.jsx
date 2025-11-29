@@ -29,7 +29,7 @@ export default function DarkModeButton() {
     };
 
     return (
-        <button onClick={toggleDarkMode} className="hover:text-violet-600 transition-colors duration-300 cursor-pointer">
+        <button onClick={toggleDarkMode} aria-label="theme toggle" className="hover:text-violet-600 transition-colors duration-300 cursor-pointer">
             {isDark ? <Moon/> : <Sun/>}
         </button>
     );

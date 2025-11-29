@@ -64,8 +64,7 @@ export default function Home() {
                 maxWidth="1000px"
             >
                 <div className="text-justify pt-6 text-slate-600 dark:text-slate-400 text-lg">
-                    My name is Ahmed Hany, I'm 24 years old and I live in Egypt.
-                    I'm a Computer and Control Engineer with a strong foundation in software development and a passion
+                    My name is Ahmed Hany, I'm a 24-year-old Computer and Control Engineer from Egypt with a strong foundation in software development and a passion
                     for creating engaging digital experiences. Skilled in Unity game development, designing interactive
                     gameplay and optimizing performance. Proficient in frontend development using HTML, CSS,
                     JavaScript, and React to build responsive, user-friendly interfaces.
@@ -103,7 +102,7 @@ export default function Home() {
                     {/* Frontend */}
                     <div>
                         <div
-                            className="text-3xl font-bold mb-4 text-nowrap text-cyan-700 pb-4 flex justify-center items-center gap-5">
+                            className="text-3xl max-md:text-2xl font-bold mb-4 text-cyan-700 pb-4 flex justify-center items-center gap-5">
                             <FaTools/> Frontend Development
                         </div>
                         <SkillCard icon={<FaHtml5/>} title="HTML & CSS"/>
@@ -117,7 +116,7 @@ export default function Home() {
                     {/* 3D Game Dev */}
                     <div>
                         <div
-                            className="text-3xl font-bold mb-4 text-nowrap text-violet-700 pb-4 flex justify-center items-center gap-5">
+                            className="text-3xl max-md:text-2xl font-bold mb-4 text-violet-700 pb-4 flex justify-center items-center gap-5">
                             <FaGamepad/> 3D Game Development
                         </div>
                         <SkillCard icon={<FaUnity/>} title="Unity Engine"/>
@@ -129,7 +128,7 @@ export default function Home() {
                     {/* Design Tools */}
                     <div>
                         <div
-                            className="text-3xl font-bold mb-4 text-nowrap text-fuchsia-700 pb-4 flex justify-center items-center gap-5">
+                            className="max-md:text-2xl text-3xl font-bold mb-4 text-fuchsia-700 pb-4 flex justify-center items-center gap-5">
                             <FaPaintBrush/> Design Tools
                         </div>
                         <SkillCard icon={<SiAdobephotoshop/>} title="Adobe Photoshop"/>
@@ -139,7 +138,7 @@ export default function Home() {
                     {/* Other Skills */}
                     <div>
                         <div
-                            className="text-3xl font-bold mb-4 text-nowrap text-slate-700 dark:text-slate-400 pb-4 flex justify-center items-center gap-5">
+                            className="max-md:text-2xl text-3xl font-bold mb-4 text-slate-700 dark:text-slate-400 pb-4 flex justify-center items-center gap-5">
                             <MdMiscellaneousServices/> Other Skills
                         </div>
                         <SkillCard icon={<FaGit/>} title="Git"/>

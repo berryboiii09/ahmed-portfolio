@@ -148,7 +148,7 @@ export const projects = [
     {
         id: 9,
         title: "Can Shooter Game",
-        description: "A 3d rail shooter game built with Unity",
+        description: "A 3D rail shooter game built with Unity",
         details: "A simple 3D rail shooter game built with Unity Engine 6, the goal is to shoot all soda cans before the time runs out.",
         category: "3D Game Development",
         date: "2025-10-17",

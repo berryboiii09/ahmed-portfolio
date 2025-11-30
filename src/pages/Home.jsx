@@ -97,7 +97,7 @@ export default function Home() {
             {/* Skills */}
             <Section id="skills" title="My Skills" textcolor="text-slate-900 dark:text-white" maxWidth="1000px"
                      bgcolor="bg-white dark:bg-slate-950">
-                <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-x-50 gap-y-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 pt-10 gap-x-10 gap-y-10">
 
                     {/* Frontend */}
                     <div>

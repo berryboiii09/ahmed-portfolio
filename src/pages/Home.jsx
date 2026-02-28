@@ -6,15 +6,15 @@ import {
     FaHtml5, FaBootstrap, FaReact, FaUnity, FaHashtag, FaFigma,
     FaGit, FaNetworkWired, FaChartArea, FaPython, FaBrain, FaBuilding,
     FaTools, FaGamepad, FaPaintBrush, FaLinkedin, FaGithub, FaItchIo,
-    FaInstagram, FaDiscord
+    FaInstagram
 } from "react-icons/fa";
-import {IoLogoJavascript} from "react-icons/io5";
-import {RiTailwindCssFill} from "react-icons/ri";
-import {SiCinema4D, SiBlender, SiAdobephotoshop} from "react-icons/si";
+import {IoLogoJavascript, IoLogoElectron} from "react-icons/io5";
+import {RiTailwindCssFill, RiNextjsFill} from "react-icons/ri";
+import {SiCinema4D, SiBlender, SiAdobephotoshop, SiTauri, SiMongodb} from "react-icons/si";
 import {MdOutlineSecurity, MdMiscellaneousServices} from "react-icons/md";
 import {GiGraduateCap} from "react-icons/gi";
 import {PiOfficeChair} from "react-icons/pi";
-
+import { TbBrandThreejs } from "react-icons/tb";
 
 export default function Home() {
 
@@ -110,7 +110,10 @@ export default function Home() {
                         <SkillCard icon={<RiTailwindCssFill/>} title="Tailwind CSS v4"/>
                         <SkillCard icon={<FaReact/>} title="React.js"/>
                         <SkillCard icon={<FaBootstrap/>} title="Bootstrap 5"/>
-
+                        <SkillCard icon={<RiNextjsFill/>} title="Next.js"/>
+                        <SkillCard icon={<IoLogoElectron/>} title="Electron"/>
+                        <SkillCard icon={<SiTauri/>} title="Tauri"/>
+                        <SkillCard icon={<TbBrandThreejs/>} title="Three.js"/>
                     </div>
 
                     {/* 3D Game Dev */}
@@ -141,6 +144,7 @@ export default function Home() {
                             className="max-md:text-2xl text-3xl font-bold mb-4 text-slate-700 dark:text-slate-400 pb-4 flex justify-center items-center gap-5">
                             <MdMiscellaneousServices/> Other Skills
                         </div>
+                        <SkillCard icon={<SiMongodb/>} title="MongoDB"/>
                         <SkillCard icon={<FaGit/>} title="Git"/>
                         <SkillCard icon={<MdOutlineSecurity/>} title="Cyber Security"/>
                         <SkillCard icon={<FaNetworkWired/>} title="Networks"/>

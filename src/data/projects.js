@@ -161,5 +161,22 @@ export const projects = [
         stack: "Unity Engine 6 - C# - Cinema 4D - Adobe Photoshop",
         github: "null",
         liveDemo: "https://berryboiii.itch.io/cans-shooter-prototype"
+    },{
+        id:10,
+        title: "Phone Landing Page",
+        description: "A Landing page for a fictonal smartphone with 3D viewer",
+        details: "A landing page for a smartphone by a fictional brand called \"AXIOM\" built using Next.js, The page features multiple sections to showcase the various features of the smartphone and includes a 3D viewer using Three.js to allow customers to have a look at the smartphone in three dimensions",
+        category: "Frontend Development",
+        date: "2026-2-28",
+        imageUrl: "/img/10.png",
+        features: "- Various sections that showcase the key features of the smartphone\n" +
+            "- Footer that contains social media links and disclaimers for some of the showcased features\n" +
+            "- 3D Viewer that allows customers to view a 3D model of the Phone\n" +
+            "- \"Buy Now\" page with real-time total price change based on selected options\n" +
+            "- \"Tech Spec\" page that contain detailed specifications of the phone\n" +
+            "- Responsive design for desktop and mobile devices",
+        stack: "Next.js - Tailwind CSS - Three.js",
+        github: "https://github.com/berryboiii09/phone-landing",
+        liveDemo: "https://axiom-phone.vercel.app"
     }
 ];
